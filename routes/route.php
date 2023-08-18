@@ -477,7 +477,7 @@ if (count($routesArray) == 0) {
             $tabla = RouetesController::validacionCampos(explode("?", $routesArray[1])[0], "tabla");
             $selected = RouetesController::validacionCampos($_GET["nameId"], "campo");
             $linkT =  RouetesController::validacionCampos( $_GET["nameId"], "campo");
-            $equalT = RouetesController::validacionCampos(  $_GET["id"], "numero");
+            $equalT = RouetesController::validacionCampos(  $_GET["id"], "campo");
            
             if($tabla == "invalidate" || $selected == "invalidate" || $linkT == "invalidate" || $equalT == "invalidate"){
                 $statusCode = new RouetesController();
